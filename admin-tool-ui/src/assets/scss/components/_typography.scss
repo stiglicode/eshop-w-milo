@@ -1,0 +1,19 @@
+.first-upper {
+    font-weight: 500;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+   
+}
+
+.heading-light {
+    font-weight: 300 !important;
+}
+
+.heading-regular {
+    font-weight: 500 !important;
+}
+
+a {
+    color: inherit;
+}

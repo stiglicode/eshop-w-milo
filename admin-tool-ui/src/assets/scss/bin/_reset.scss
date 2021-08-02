@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#root {
+    height: 100vh;
+}
+
+// .main-content {
+//     padding-top: 7.8125rem;
+// }
+
+.full-height {
+    height: 100%;
+}
+
+hr {
+    margin: 1rem 0 !important;
+    color: inherit !important;
+    background-color: currentColor !important;
+    border: 0;
+    opacity: .25 !important;
+    height: 1px;
+}
+
+.cms-logo-padd {
+    padding-top: .6875rem;
+    padding-bottom: .5rem;
+}
+
+.body-dark {
+    background-color: #42474c !important;
+}
