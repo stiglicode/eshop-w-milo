@@ -1,0 +1,9 @@
+{
+	"semi": true,
+	"singleQuote": false,
+	"useTabs": true,
+	"endOfLine": "lf",
+	"bracketSpacing": true,
+	"jsxBracketSaneL": false,
+	"arrowParens": "avoid"
+}

@@ -1,0 +1,126 @@
+POST http://localhost:2211/api/products/
+Content-Type: application/json
+
+{
+    "title": "First Product title name",
+	"description": "Dolore minim commodo voluptate ipsum duis quis laboris dolore cillum voluptate voluptate veniam id. Non nulla dolore et sint. Magna nisi est et commodo ea tempor eiusmod incididunt quis commodo. Eiusmod aliqua anim in elit consectetur nulla minim quis. Exercitation qui consequat consequat eiusmod ipsum eiusmod laborum minim incididunt deserunt consequat eu aliquip. Velit enim ut enim sunt do nisi nostrud do.",
+	"images": ["http://localhost:3000/api/products"],
+	"price": "14.99",
+	"filamentColor": {
+		"options": "flc-4",
+		"price": 19.99
+	},
+	"filamentType": {
+		"options": "flt-2",
+		"price": 19.99
+	},
+	"size": {
+		"options": 2
+	}
+}
+
+###
+
+POST http://localhost:2211/api/auth/profile
+Content-Type: application/json
+
+{
+    "permission": "admin",
+	"name": "admin",
+	"password": "RandomPasswordGeneratedByMD5IamKiddingMD5IsOldTechnology"
+}
+
+###
+
+POST http://localhost:2211/api/auth/logs
+Content-Type: application/json
+
+{
+    "op": "admin",
+	"name": "administrator"
+}
+
+###
+
+POST http://localhost:2211/api/orders
+Content-Type: application/json
+
+{
+	"product_details": {
+		"id": "610e9acaed5b8d10b198d57b",
+		"filamentColor": {
+			"options": "flc-4",
+			"price": 19.99
+		},
+		"filamentType": {
+			"options": "flt-3",
+			"price": 15
+		},
+		"size": {
+			"options": 2,
+			"price": 0
+		},
+		"totalPrice": 50.45
+	},
+	"billing_details": {
+		"customerName": "Milan Stiglic",
+		"customerEmail": "stiglic.231@gmail.com",
+		"customerPhone": "0917312694",
+		"customerAddress": {
+			"town": "Ivanka pri Dunaji",
+			"street": "Pekná",
+			"homeNumber": "11",
+			"zipCode": 90028
+		},
+		"payment": "cash",
+		"shipping": "UPC"
+	}
+}
+
+###
+
+POST http://localhost:2211/api/shipping
+Content-Type: application/json
+
+###
+
+POST http://localhost:2211/api/filaments/colors
+Content-Type: application/json
+
+{
+	"filamentColor": {
+		"name": "flc-4",
+		"price": 12.20
+	}
+}
+
+###
+
+POST http://localhost:2211/api/filaments/types
+Content-Type: application/json
+
+{
+	"filamentType": {
+		"name": "flt-4",
+		"price": 2.20
+	}
+}
+
+### -----------------------------------------------__DELETE__----------------------------------------------------------
+
+### Auth remove handler
+
+DELETE http://localhost:2211/api/auth/profile
+
+
+### Products remove handelr
+
+DELETE http://localhost:2211/api/products
+
+### logs remove handler
+
+DELETE http://localhost:2211/api/auth/logs
+
+### Orders remove handler
+
+DELETE http://localhost:2211/api/orders
