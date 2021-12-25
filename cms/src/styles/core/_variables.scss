@@ -1,0 +1,65 @@
+//# Colors
+//
+$primary: #62a0fc;
+$primary-soft: #dfeafa;
+
+//# Options
+$enable-smooth-scroll: false;
+
+//# Typography
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+//
+//# Paragraphs
+//
+$paragraph-margin-bottom: 1.5rem;
+
+//# Grid
+//
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1180px,
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+);
+
+//# Layout
+//
+$side-menu_width: 5.625rem;
+$configuration-menu_width: 16.5625rem;
+$main-content_width: 100vw;
+
+$grid-gutter-width: 1rem;
+
+//# Body
+//
+//# Typography
+//
+$font-size-base: 1rem;
+
+//# Components
+//
+//# Buttons + Forms
+//# Buttons
+//
+//# Forms
+//
+$form-label-font-weight: 600;
+
+//# Cards
+//
+//# Line height
+//
+//# Font weight
+//
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+@import "../../../node_modules/bootstrap/scss/variables";

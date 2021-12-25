@@ -1,0 +1,68 @@
+.main-header {
+  height: 5.3125rem;
+
+  &_box-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      transition: .2s;
+      color: $secondary;
+    }
+
+    a:hover {
+      color: $primary;
+    }
+
+    margin-left: 0.875rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &_start-box,
+  &_center-box,
+  &_end-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  &_start-box {
+    &--notification {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+  &_center-box {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 100%;
+    padding: 0 1.5rem;
+  }
+
+  &_end-box {
+    &--account {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    &--account .icon-wrapper {
+      font-size: 1.75rem;
+      color: $secondary;
+    }
+
+    &--account span {
+      margin-left: 0.625rem;
+      font-size: 1rem;
+      user-select: none;
+    }
+
+  }
+}

@@ -1,0 +1,10 @@
+@keyframes faded-in__from-top {
+    from {
+        top: -1.5em;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}

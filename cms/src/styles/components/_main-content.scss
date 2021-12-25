@@ -1,0 +1,25 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - (5.3125rem + (16px * 2)));
+  padding: 1rem 1.5rem .5rem 1.5rem;
+
+  &_header {
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-bottom: 0.0625rem solid rgba($color: #dee2e6, $alpha: 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+
+    span {
+      margin-right: 1rem;
+    }
+  }
+
+  //&_body {
+  //  overflow-y: auto;
+  //}
+
+}

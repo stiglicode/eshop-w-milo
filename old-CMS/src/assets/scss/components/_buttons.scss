@@ -1,0 +1,33 @@
+.btn-hoverd {
+    transition: .2s;
+    color: $secondary;
+    &:hover {
+        color: $primary;
+        opacity: .5;
+    }
+}
+
+.hover-delete {
+    transition: .2s;
+    position: relative;
+    cursor: pointer;
+    &::before {
+        content: "✕";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .875rem;
+        color: rgba(255,255,255,0) !important;
+    }
+    &:hover {
+        color: rgba(255,255,255,0) !important;
+        &::before { 
+            color: rgba(255,255,255,1) !important;
+        }
+    }
+}
