@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const DB_CONNECT = () => {
+	// eslint-disable-next-line
 	mongoose.connect(process.env.DB_URL, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,

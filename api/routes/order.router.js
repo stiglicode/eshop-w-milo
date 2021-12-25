@@ -4,9 +4,7 @@ const router = express.Router();
 
 const OrderSchema = require("../models/order.model");
 
-const middlewares = require("../../api/middleware/index");
-
-router.get("/", middlewares.secureAPI, async (req, res, next) => {
+router.get("/", async (req, res, next) => {
 	try {
 		const orders = await OrderSchema.find();
 		return res.json(orders);

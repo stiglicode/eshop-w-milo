@@ -18,7 +18,7 @@ const filamentsRoute = require("./api/routes/items/filaments.router");
 const db = require("./db/connection");
 
 const app = express();
-
+// eslint-disable-next-line
 const port = process.env.PORT || 2211;
 
 //
@@ -31,6 +31,7 @@ app.use(morgan("common"));
 app.use(helmet());
 app.use(
 	cors({
+		// eslint-disable-next-line
 		origin: process.env.CORS_ORIGIN,
 	})
 );
